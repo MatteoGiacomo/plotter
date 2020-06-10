@@ -4,7 +4,7 @@ const AGGREGATION_SLUG = 'aggregation-overall';
 const AGGREGATION_DETAILS_KEY = 'details'
 const ADDITIONAL_INFO_KEY = 'extra'
 const DETAILS_SERIES_KEY = 'score'
-const DEFAULT_Y_VALUE = 0
+const DEFAULT_Y_VALUE = 0;
 
 // cache to keep aggragationOverall data
 let cacheAggregation = null;
@@ -17,7 +17,7 @@ let cacheAggregation = null;
  * @param {String} keyValue 
  * @returns {Object}
  */
-function getFilteredData (data, keyName, keyValue) 
+function getFilteredData (data, keyName, keyValue) {
   // assuming only one keyName is present in data
   return data.filter(obj => obj[keyName] === keyValue)[0] || {}; // default value if no result are found
 }
